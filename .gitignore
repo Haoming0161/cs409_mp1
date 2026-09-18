@@ -1,9 +1,6 @@
 .idea/
-.idea/*
-node_modules
-node_modules/*
+node_modules/
+build/
 public/
-public/*
-.DS_Store
 dist/
-dist/*
+.DS_Store
