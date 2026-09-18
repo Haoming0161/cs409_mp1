@@ -1,13 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A student-made field guide to computing at The Ohio State University."
+    />
+    <title>Built at Ohio State | CSE Field Guide</title>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Built at Ohio State, home"
+        ><span class="brand-mark">{ }</span><span>BUILT <b>@ OSU</b></span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span><span></span><span></span
+        ><span class="sr-only">Toggle navigation</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a><a href="#explore">Explore</a
+        ><a href="#paths">Paths</a><a href="#people">Community</a
+        ><a href="#watch">Watch</a>
+      </div>
+      <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    </nav>
+
+    <header class="hero stripe" id="home">
+      <div class="hero-glow"></div>
+      <div class="content hero-content">
+        <p class="eyebrow">THE OHIO STATE UNIVERSITY · CSE</p>
+        <h1>Build what<br /><em>comes next.</em></h1>
+        <p class="hero-copy">
+          A student field guide to the ideas, spaces, and people shaping
+          computing in Columbus.
+        </p>
+        <a class="button button-primary" href="#explore"
+          >Start exploring <span aria-hidden="true">↓</span></a
+        >
+      </div>
+      <div class="hero-code" aria-hidden="true">
+        <span>01</span><code>curiosity.map(idea =&gt; impact);</code
+        ><span>02</span><code>community.forEach(create);</code><span>03</span
+        ><code>return betterTomorrow;</code>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section class="stripe intro" id="explore">
+        <div class="content">
+          <p class="eyebrow dark">WHY COMPUTING HERE?</p>
+          <div class="section-heading">
+            <h2>One department.<br />Endless directions.</h2>
+            <p>
+              From the first line of code to research that changes lives, Ohio
+              State CSE is where technical depth meets a campus full of
+              possibility.
+            </p>
+          </div>
+
+          <div
+            class="carousel"
+            aria-roledescription="carousel"
+            aria-label="CSE experience highlights"
+          >
+            <div class="carousel-viewport">
+              <article class="slide active" data-slide="0">
+                <div class="slide-art art-build">
+                  <span class="orbit orbit-one"></span
+                  ><span class="orbit orbit-two"></span><strong>01</strong>
+                </div>
+                <div class="slide-copy">
+                  <span>MAKE</span>
+                  <h3>Turn ideas into working systems.</h3>
+                  <p>
+                    Coursework moves from foundations to full-scale software,
+                    giving you room to prototype, test, and ship.
+                  </p>
+                </div>
+              </article>
+              <article class="slide" data-slide="1" aria-hidden="true">
+                <div class="slide-art art-research">
+                  <div class="nodes"><i></i><i></i><i></i><i></i><i></i></div>
+                  <strong>02</strong>
+                </div>
+                <div class="slide-copy">
+                  <span>DISCOVER</span>
+                  <h3>Ask questions no one has answered.</h3>
+                  <p>
+                    Explore intelligent systems, graphics, cybersecurity, data,
+                    and the theory underneath it all.
+                  </p>
+                </div>
+              </article>
+              <article class="slide" data-slide="2" aria-hidden="true">
+                <div class="slide-art art-connect">
+                  <span>OH</span><span>IO</span><strong>03</strong>
+                </div>
+                <div class="slide-copy">
+                  <span>CONNECT</span>
+                  <h3>Find your people—and your place.</h3>
+                  <p>
+                    Student organizations, project teams, hackathons, and
+                    mentors make a big university feel close-knit.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <button
+              class="carousel-arrow prev"
+              type="button"
+              aria-label="Previous slide"
+            >
+              ←
+            </button>
+            <button
+              class="carousel-arrow next"
+              type="button"
+              aria-label="Next slide"
+            >
+              →
+            </button>
+            <div class="carousel-dots" role="group" aria-label="Choose a slide">
+              <button class="active" aria-label="Slide 1" type="button"></button
+              ><button aria-label="Slide 2" type="button"></button
+              ><button aria-label="Slide 3" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stripe paths" id="paths">
+        <div class="content">
+          <p class="eyebrow">FIND YOUR DIRECTION</p>
+          <h2>Choose a problem<br />worth solving.</h2>
+          <div class="path-grid">
+            <article>
+              <span class="css-icon icon-ai" aria-hidden="true"></span>
+              <p>01 / INTELLIGENCE</p>
+              <h3>AI &amp; Machine Learning</h3>
+              <button
+                class="text-button modal-trigger"
+                data-modal="ai"
+                type="button"
+              >
+                See the path <span>↗</span>
+              </button>
+            </article>
+            <article>
+              <span class="css-icon icon-secure" aria-hidden="true"></span>
+              <p>02 / TRUST</p>
+              <h3>Cybersecurity</h3>
+              <button
+                class="text-button modal-trigger"
+                data-modal="security"
+                type="button"
+              >
+                See the path <span>↗</span>
+              </button>
+            </article>
+            <article>
+              <span class="css-icon icon-human" aria-hidden="true"></span>
+              <p>03 / EXPERIENCE</p>
+              <h3>Graphics &amp; Games</h3>
+              <button
+                class="text-button modal-trigger"
+                data-modal="graphics"
+                type="button"
+              >
+                See the path <span>↗</span>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="stripe statement"
+        aria-label="Buckeye computing statement"
+      >
+        <div class="content">
+          <span class="asterisk" aria-hidden="true">✦</span>
+          <blockquote>
+            “Code is only the beginning.<br /><em
+              >What matters is what you do with it.</em
+            >”
+          </blockquote>
+          <p>BUCKEYE ENGINEERS THINK BEYOND THE SCREEN.</p>
+        </div>
+      </section>
+
+      <section class="stripe people" id="people">
+        <div class="content">
+          <p class="eyebrow dark">THE PEOPLE IN THE PROGRAM</p>
+          <div class="section-heading">
+            <h2>Better when<br />we build together.</h2>
+            <p>
+              Your best resource is the person sitting next to you. Meet
+              collaborators through communities made for every kind of builder.
+            </p>
+          </div>
+          <div class="community-grid">
+            <article>
+              <span>PROJECTS</span>
+              <h3>OHI/O</h3>
+              <p>Make something bold at hackathons and project events.</p>
+              <div class="card-number">48<small>hours to create</small></div>
+            </article>
+            <article>
+              <span>COMMUNITY</span>
+              <h3>Student Orgs</h3>
+              <p>
+                Find peers around interests, identities, service, and
+                technology.
+              </p>
+              <div class="card-number">∞<small>ways to belong</small></div>
+            </article>
+            <article>
+              <span>MENTORSHIP</span>
+              <h3>Peer Support</h3>
+              <p>
+                Learn with students who remember being exactly where you are.
+              </p>
+              <div class="card-number">1:1<small>human connection</small></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="stripe video-section" id="watch">
+        <div class="content">
+          <div class="video-copy">
+            <p class="eyebrow">A MOMENT TO LOOK CLOSER</p>
+            <h2>Ideas grow<br />with attention.</h2>
+            <p>
+              Computing is a practice of observing, experimenting, and finding
+              patterns. Take a breath, then bring that focus to your next build.
+            </p>
+          </div>
+          <div class="video-frame">
+            <video
+              controls
+              muted
+              loop
+              playsinline
+              poster="assets/video-poster.svg"
+            >
+              <source
+                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.</video
+            ><span>HTML5 VIDEO · CC0</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="stripe">
+      <div class="content footer-main">
+        <div>
+          <a class="brand" href="#home"
+            ><span class="brand-mark">{ }</span
+            ><span>BUILT <b>@ OSU</b></span></a
+          >
+          <p>
+            A student-made celebration of curiosity, community, and computer
+            science.
+          </p>
+        </div>
+        <div>
+          <h2>Ready to build?</h2>
+          <a
+            class="button button-light"
+            href="https://cse.osu.edu/"
+            target="_blank"
+            rel="noreferrer"
+            >Visit Ohio State CSE ↗</a
+          >
+        </div>
+      </div>
+      <div class="content footer-bottom">
+        <p>Made with care in Columbus, Ohio.</p>
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/ohiostate/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ohio State on Instagram"
+            ><span class="social-icon instagram"></span></a
+          ><a
+            href="https://www.linkedin.com/school/the-ohio-state-university/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ohio State on LinkedIn"
+            ><span class="social-icon linkedin">in</span></a
+          ><a
+            href="https://www.youtube.com/user/OhioStateUniversity"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ohio State on YouTube"
+            ><span class="social-icon youtube"></span
+          ></a>
+        </div>
+        <p>CS 409 · MP1 · 2026</p>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-backdrop"></div>
+      <div class="modal-panel">
+        <button class="modal-close" type="button" aria-label="Close modal">
+          ×
+        </button>
+        <p class="eyebrow dark" id="modal-kicker"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-copy"></p>
+        <div id="modal-tags" class="modal-tags"></div>
+      </div>
+    </div>
+  </body>
 </html>
